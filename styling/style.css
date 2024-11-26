@@ -1,0 +1,344 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #D0CEC8;
+  z-index: 1;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #006980;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus {
+  color: #006980;
+}
+
+.navbar a,
+.navbar a:focus {
+  color: black;
+  text-decoration: none !important;
+  padding: 10px 10px;
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  display: inline;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.auth-buttons .login {
+  background: none;
+  color: #007b8f;
+
+}
+
+.auth-buttons .register {
+  background: #007b8f;
+  color: #ffffff;
+
+}
+
+/* Responsive Design */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* 
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #081c24;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+ */
+
+
+/* Hero Section */
+header.hero-section {
+  position: relative;
+  background-image: url(./images/Drone\ Beach\ Waves\ 1.png);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Stats Section */
+#stats {
+  background: #f8f9fa;
+  padding: 50px 0;
+}
+
+#stats h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#stats p {
+  color: #6c757d;
+}
+
+#stats .col-md-3 {
+  margin-top: 20px;
+}
+
+#stats h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Partners Section */
+#partners {
+  padding: 50px 0;
+}
+
+#partners h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #005A64;
+}
+
+#partners p {
+  color: #6c757d;
+}
+
+#partners .btn {
+  margin-top: 20px;
+  padding: 10px 50px;
+  font-size: 1rem;
+  color: #005A64;
+  background-color: white;
+  /* border: #005A64 2px; */
+  border-radius: 15px;
+  border-color: #005A64;
+}
+
+#inspired {
+  padding: 50px 0;
+  position: relative;
+  background-image: url(./images/Rectangle\ 4.png);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+}
+
+#inspired .btn {
+  margin-top: 20px;
+  padding: 10px 50px;
+  font-size: 1rem;
+  color: #005A64;
+  background-color: white;
+  border-radius: 15px;
+}
+
+/* Why Choose Us Section */
+#features {
+  background: #f8f9fa;
+  padding: 90px 0;
+}
+
+#features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#features .col-md-4 {
+  margin-top: 20px;
+}
+
+#features h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#features p {
+  color: #6c757d;
+}
+
+#features .card {
+  background-color: white;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 40%;
+  height: 200px;
+  width: 150px;
+  border: none;
+}
+#choose h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #005A64;
+}
+
+#choose .card-c{
+  background-color: #EBF2F3;
+  padding:1px;
+  margin-top: 8px;
+  margin-left: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 350px;
+  height: 200px;
+}
+/* Footer */
+.footer {
+  background: #005A64;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  /* هذا يجعل العناصر في السطر */
+  justify-content: flex-start;
+  /* محاذاة العناصر بداية السطر */
+  gap: 20px;
+  /* المسافة بين الأيقونات */
+}
+
+.social-item {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.footer.contacts a p {
+  display: flex;
+  display: inline;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.social-link:hover {
+  opacity: 0.7;
+  /* تأثير عند التمرير فوق الأيقونة */
+}
+
+.footer h5 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #adb5bd;
+}
+
+.footer ul li a:hover {
+  color: #007bff;
+}
+
+.footer p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #007bff;
+}
+
+.footer.right p {
+  background-color: #09474e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  #stats h2,
+  #partners h2,
+  #features h2 {
+    font-size: 2rem;
+  }
+
+  #stats h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer h5 {
+    font-size: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

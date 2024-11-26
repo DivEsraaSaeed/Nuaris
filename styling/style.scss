@@ -1,0 +1,225 @@
+/* General Reset */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+}
+
+/* Navbar */
+.navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+        font-size: 1rem;
+        margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+        color: #007bff;
+}
+.navbar {
+        position: fixed !important;
+        /* order: 3; */
+        background-color: #060606;
+        opacity: 70%;
+        width: 100%;
+        padding: 0;
+        text-decoration-color: #ffffff;
+        /* z-index: 1; */
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus {
+        color: var(--accent-color);
+        /* background-color: #ffc451; */
+}
+
+.navbar a,
+.navbar a:focus {
+        color: white;
+        text-decoration: none !important;
+        padding: 10px 10px;
+        font-family: var(--nav-font);
+        font-size: 17px;
+        font-weight: 500;
+        /* display: flex; */
+        display: inline;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.3s;
+}
+
+
+
+
+
+
+
+/* Hero Section */
+header.hero-section {
+        position: relative;
+        background-image: url(./images/Drone\ Beach\ Waves\ 1.png);
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        width: 100%;
+        z-index: 1;
+}
+.hero-overlay {
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+}
+
+.hero-overlay h1 {
+        font-size: 3rem;
+        font-weight: bold;
+}
+
+/* Stats Section */
+#stats {
+        background: #f8f9fa;
+        padding: 50px 0;
+}
+
+#stats h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+}
+
+#stats p {
+        color: #6c757d;
+}
+
+#stats .col-md-3 {
+        margin-top: 20px;
+}
+
+#stats h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #007bff;
+}
+
+/* Partners Section */
+#partners {
+        padding: 50px 0;
+}
+
+#partners h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+}
+
+#partners p {
+        color: #6c757d;
+}
+
+#partners .btn {
+        margin-top: 20px;
+        padding: 10px 30px;
+        font-size: 1rem;
+}
+
+/* Why Choose Us Section */
+#features {
+        background: #f8f9fa;
+        padding: 50px 0;
+}
+
+#features h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+}
+
+#features .col-md-4 {
+        margin-top: 20px;
+}
+
+#features h4 {
+        font-size: 1.5rem;
+        font-weight: bold;
+}
+
+#features p {
+        color: #6c757d;
+}
+
+/* Footer */
+.footer {
+        background: #343a40;
+        color: #adb5bd;
+        padding: 40px 0;
+}
+
+.footer h5 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        color: white;
+}
+
+.footer ul {
+        list-style: none;
+}
+
+.footer ul li {
+        margin-bottom: 10px;
+}
+
+.footer ul li a {
+        text-decoration: none;
+        color: #adb5bd;
+}
+
+.footer ul li a:hover {
+        color: #007bff;
+}
+
+.footer p {
+        margin-top: 20px;
+        font-size: 0.9rem;
+}
+
+.footer a {
+        color: #adb5bd;
+        text-decoration: none;
+}
+
+.footer a:hover {
+        color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+        .hero-overlay h1 {
+                font-size: 2rem;
+        }
+
+        #stats h2,
+        #partners h2,
+        #features h2 {
+                font-size: 2rem;
+        }
+
+        #stats h3 {
+                font-size: 1.5rem;
+        }
+
+        .footer h5 {
+                font-size: 1rem;
+        }
+
+        .navbar-nav .nav-link {
+                font-size: 0.9rem;
+        }
+}
