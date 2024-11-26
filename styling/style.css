@@ -116,7 +116,7 @@ header.hero-section {
 }
 
 /* Stats Section */
-#stats {
+/* #stats {
   background: #f8f9fa;
   padding: 50px 0;
 }
@@ -138,7 +138,7 @@ header.hero-section {
   font-size: 2rem;
   font-weight: bold;
   color: #007bff;
-}
+} */
 
 /* Partners Section */
 #partners {
@@ -191,21 +191,29 @@ header.hero-section {
 /* Why Choose Us Section */
 #features {
   background: #f8f9fa;
-  padding: 90px 0;
+  padding: 90px 0;  /* مسافة داخلية أعلى وأسفل */
 }
 
 #features h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;  /* مسافة أسفل العنوان */
+}
+
+#features .row {
+  display: flex;
+  gap: 30px;  /* المسافة بين الأعمدة */
 }
 
 #features .col-md-4 {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;  /* ترتيب المحتويات عموديًا */
+  gap: 20px;  /* المسافة بين المحتويات داخل كل عمود */
 }
 
 #features h4 {
   font-size: 1.5rem;
   font-weight: bold;
+  margin-bottom: 10px;  /* مسافة أسفل العنوان */
 }
 
 #features p {
@@ -214,16 +222,29 @@ header.hero-section {
 
 #features .card {
   background-color: white;
-  padding: 10px;
-  margin: 8px;
-  border-radius: 40%;
-  height: 200px;
-  width: 150px;
+  padding: 20px;  /* مسافة داخلية في البطاقة */
+  border-radius: 40%;  /* الزوايا المدورة */
   border: none;
+  display: flex;
+  flex-direction: column;  /* ترتيب المحتويات عموديًا داخل البطاقة */
+  gap: 15px;  /* المسافة بين العنوان والوصف داخل البطاقة */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* إضافة ظل ناعم */
 }
+
+@media (max-width: 768px) {
+  #features .row {
+    flex-direction: column;  /* ترتيب الأعمدة عموديًا في الشاشات الصغيرة */
+    gap: 20px;  /* المسافة بين الأعمدة في الشاشات الصغيرة */
+  }
+
+  #features .col-md-4 {
+    gap: 15px;  /* مسافة أقل بين العناصر في الشاشات الصغيرة */
+  }
+}
+
 #choose h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  gap: 20px;
   color: #005A64;
 }
 
@@ -248,11 +269,8 @@ header.hero-section {
   list-style: none;
   padding: 0;
   display: flex;
-  /* هذا يجعل العناصر في السطر */
   justify-content: flex-start;
-  /* محاذاة العناصر بداية السطر */
   gap: 20px;
-  /* المسافة بين الأيقونات */
 }
 
 .social-item {

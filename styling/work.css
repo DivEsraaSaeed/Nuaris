@@ -1,0 +1,348 @@
+/* General Reset */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+}
+
+body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+        background-color: #EDF4F5;
+        z-index: 1;
+}
+
+.navbar-nav .nav-link {
+        font-size: 1rem;
+        margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+        color: #006980;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus {
+        color: #006980;
+}
+
+.navbar a,
+.navbar a:focus {
+        color: black;
+        text-decoration: none !important;
+        padding: 10px 10px;
+        font-size: 17px;
+        font-weight: 500;
+        display: flex;
+        display: inline;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.3s;
+}
+
+.auth-buttons {
+        display: flex;
+        gap: 10px;
+}
+
+.auth-buttons a {
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px 10px;
+        border-radius: 5px;
+}
+
+.auth-buttons .login {
+        background: none;
+        color: #007b8f;
+
+}
+
+.auth-buttons .register {
+        background: #007b8f;
+        color: #ffffff;
+
+}
+
+/* Responsive Design */
+.menu-icon {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+        .menu-icon {
+                display: block;
+        }
+}
+
+/* About Section */
+header.About-section {
+        padding: 60px 0;
+        gap: 40px;
+}
+
+header .container .about-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #006980;
+        gap: 10px;
+}
+
+header .container .about-links .d-flex {
+        gap: 10px;
+}
+
+header .container .col-md-6 {
+        display: flex;
+        gap: 140px;
+        justify-content: center;
+}
+
+header .container .col-md-6 img {
+        max-width: 100%;
+        /* height: auto; */
+        display: flex;
+        gap: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+        .about-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+        }
+
+        .col-md-6 {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+        }
+}
+
+/* Hero_section */
+#hero .container {
+        background-color: #006980;
+        padding: 50px;
+        border-radius: 20px;
+}
+/* Section Styling */
+.maritime-section {
+        background-color: #f8f9fa;
+      }
+      
+      .maritime-section .bg-primary {
+        background-color: #017c84; 
+      }
+      
+      .maritime-section h2,
+      .maritime-section h3 {
+        font-weight: 700;
+      }
+      
+      .maritime-section p {
+        line-height: 1.6;
+      }
+      
+      .maritime-section ul {
+        padding: 0;
+        margin: 0;
+      }
+      
+      .maritime-section ul li {
+        list-style: none;
+      }
+      
+      /* Responsive Image and Text Section */
+      .maritime-content {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 50px;
+        align-items: center;
+      }
+      
+      .maritime-image {
+        max-width: 100%;
+        padding: 10px;
+      }
+      .maritime-section img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      
+      .maritime-text {
+        text-align: center; 
+        color: #005A64;
+        padding: 20px;
+      }
+      #hero .containerAll .maritime-text .list-unstyled .frame  {
+        background-color: #ffffff;
+        display:flex;
+        gap: 10px;
+        border-radius: 30px;
+        padding: 20px;
+
+}  
+      @media (min-width: 992px) {
+        /* On large screens (desktops/tablets), the layout changes to 2 columns */
+        .maritime-content {
+          grid-template-columns: 1fr 1fr; /* 2 columns */
+        }
+      
+        .maritime-text {
+          text-align: left;
+          color: #005A64;
+          /* Align text to the left on larger screens */
+        }
+      
+        .maritime-image {
+          max-width: 100%; /* Ensures the image is responsive */
+        }
+      }
+  
+/* features Section */
+#features h2 {
+        color: #006980;
+}
+
+.row {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+}
+
+
+.col-md-2 {
+        flex: 1 1 calc(20% - 15px);
+        max-width: 20%;
+}
+
+.card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #FFF5E2;
+        text-align: center;
+        border: none;
+
+}
+/* Step Section */
+#Step h2 {
+        color: #006980;
+}
+.cardstep {
+        display: flex;
+        flex-direction: column;
+
+}
+
+/* Footer */
+.social {
+        display: flex;
+        gap: 15px;
+        list-style: none; 
+        padding: 0;
+        margin: 0;
+      }
+      
+      .social-item a {
+        text-decoration: none;
+        color: inherit; 
+      }
+      
+      .social i {
+        font-size: 20px; 
+      }
+      
+      .row p {
+        margin-bottom: 0; 
+      }
+      
+.footer {
+        background: #005A64;
+        color: #ffffff;
+        padding: 40px 0;
+      }
+      
+     
+      .footer h5 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        color: white;
+      }
+      
+      .footer ul {
+        list-style: none;
+      }
+      
+      .footer ul li {
+        margin-bottom: 10px;
+      }
+      
+      .footer ul li a {
+        text-decoration: none;
+        color: #adb5bd;
+      }
+      
+      .footer ul li a:hover {
+        color: #007bff;
+      }
+      
+      .footer p {
+        margin-top: 20px;
+        font-size: 0.9rem;
+      }
+      
+      .footer a {
+        color: #adb5bd;
+        text-decoration: none;
+      }
+      
+      .footer a:hover {
+        color: #007bff;
+      }
+      
+      .footer.right p {
+        background-color: #09474e;
+      }
+      
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .hero-overlay h1 {
+          font-size: 2rem;
+        }
+      
+        #stats h2,
+        #partners h2,
+        #features h2 {
+          font-size: 2rem;
+        }
+      
+        #stats h3 {
+          font-size: 1.5rem;
+        }
+      
+        .footer h5 {
+          font-size: 1rem;
+        }
+      
+        .navbar-nav .nav-link {
+          font-size: 0.9rem;
+        }
+      }
+      
